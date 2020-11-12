@@ -1,0 +1,37 @@
+Resumo do Problema:
+---------------------
+	- Manter o nível d'água sob controle em residência remota (casa de campo ou praia);
+	- A água não cai constantemente.
+	- Há que se aproveitar quando a água cai para encher a caixa e cisterna
+	- Havendo água na cisterna, a bomba d'água deve ser ligada automaticamente 
+	(segundo regras):
+		- Não ligar / desligar a bomba se a caixa estiver cheira;
+		- Não ligar / desligar a bomba se a cisterna estiver vazia;
+		- Desligar a bomba se ela não estiver sugando (entupimento);
+		- A bomba não deve ligar de madrugada (ruído), se possível.
+
+Sensores: 
+---------------------
+	- bóia d'agua eletrônica (nível atual da água)?
+	- bóia d'agua eletrônica (nível atual da água)?
+	- sensor de vazão (Água da rua está entrando na cisterna?)
+	- sensor de vazão (bomba está bombeando mesmo?)
+
+Atuador:
+---------------------
+	Acionador da Bomba d'água (acionada via relé).
+	
+Comunicação:
+---------------------
+	- Controlador informa que a água da rua não está caindo na cisterna (?)
+	- Controlador informa que o nível da caixa está baixo (e não está sendo abastecida)
+	- Controlador informa que o nível da cisterna está baixo (e não está sendo abastecida)
+	- Controlador informa que a bomba não está funcionando.
+	- Usuário usa um App para "assinar" a residência desejada.
+	
+Dispositivos:
+---------------------
+	- Dispositivo da caixa d'água - comunicação WAN - alimentado à bateria + fotocélula
+	- Dispositivo da cisterna - comunicação WAN - alimentado à bateria + fotocélula
+	- Servidor doméstico, conectado aos anteriores, e conectado à internet - ligado à luz
+	- Telefone celular, que é usado pra notificar usuário.
